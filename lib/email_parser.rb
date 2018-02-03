@@ -13,6 +13,7 @@ class EmailParser
 
   def parse
     email_array = email_list.split(/[\s,]/)
+    email_array.delete("")
     email_array
   end
 
